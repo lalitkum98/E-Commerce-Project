@@ -1,0 +1,164 @@
+*{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+}
+.container{
+	display: flex;   
+    flex-flow:column nowrap;
+}
+.header {
+	margin-top:-6px;
+	margin-left:-5px;
+	margin-right:-5px;
+	display: flex; 
+	background-color:#F2F3F4;
+}
+
+.menu{
+	margin-top:5px;
+	margin-left:-5px;
+	margin-right:-5px;
+	padding-bottom:5px;
+	display: flex; 
+	background-color:#F2F3F4;
+}
+
+.mainarea {
+	margin-top: 5px;
+	margin-left:-5px;
+	margin-right:-5px;
+	background-color:#F8F9F9;
+	display: flex;
+	/* overflow-y: scroll; */
+}
+.footer{
+	margin-top:5px;
+	margin-left:-5px;
+	margin-right:-5px;
+	display: flex; 
+	background-color:#F2F3F4;
+	
+}
+.leftArea {
+	float:left;
+	top: 5px;
+	border: solid 1px #CCCCCC;
+	background-color: #F5F2F2;
+	height:540px;
+	/* overflow-y: scroll; */
+}
+
+.rightArea {
+	float:left;
+	top: 5px;
+	left: 5px;
+	height:540px;
+	background-color:#F8F9F9;
+	overflow-y: auto;
+}
+
+.headerText {
+	margin-top:10px;
+}
+
+.footerText {
+	margin-top:10px;
+}
+
+h1 {
+	text-align: left;
+	font-size: 25px;
+	color:grey;
+	
+}
+
+.menucontainer{
+	border-style: groove;
+	background-color: #EEEBEB;
+	border-width: 2px;
+	width: 800px;
+	height:50px;
+	float:left;
+}
+.menutab{
+	border-style: groove;
+	background-color: #EEEBEB;
+	border-width: 2px;
+	width: 100px;
+	height:30px;
+	float:left;	
+}
+
+.productListingBox{
+	border-style: groove;
+	background-color: #EEEBEB;
+	border-width: 5px;
+	width: 270px;
+	float:left;
+	margin-left:50px;
+	margin-top:10px;
+	margin-bottom:30px;
+	
+}
+
+.productImage{
+	height: 150px;
+	Width : 150px ;
+	border-style: groove;
+	margin-left: 30px;
+}
+
+.menucontainer button{
+  	margin-bottom:15px;
+  	margin-top:5px;
+  	width:120px;
+  	height:40px;
+	}
+	
+ul {
+	list-style-type: none;
+	padding-left: 0px;
+	margin-top: 0px;
+}
+
+li {
+	text-decoration: none;
+	display: block;
+	color: #000000;
+	border-bottom: solid 1px #CCCCCC;
+	
+}
+
+li :hover {
+	background-color: grey;
+	color: white;
+}
+
+input,textarea {
+	margin-left:10px;
+	min-height: 30px;
+	outline: none;
+}
+
+textarea {
+	margin-bottom: 15px;
+	margin-top: 5px;
+	height: 200px;
+	width: 250px;
+}
+
+label {
+
+	display: block;
+	margin-left:10px;
+	margin-top:10px;
+	
+}
+span{
+	
+	
+}
+button {
+	margin-top:10px;
+	width: 150px;
+}
