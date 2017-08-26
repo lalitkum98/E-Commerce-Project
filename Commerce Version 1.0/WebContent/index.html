@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Commerce</title>
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+
+<form data-bind="submit: CreateProduct">
+<div class="leftArea">
+    Product Id : <input data-bind="value: productId" placeholder=" product Id" />
+    Product Name : <input data-bind="value: productName" placeholder=" product Name" />
+    Product Description : <input data-bind="value: productDescription" placeholder=" product Description" />
+    Product Brand : <input data-bind="value: productBrand" placeholder=" product Brand" />
+    Uploaded image: <img height="100" data-bind="attr:{src: uploadedImage()}">
+    <input type="file" accept='image/*' data-bind="value: productImage, event:{change: uploadProductImage}" placeholder=" Upload Product Image" /> 
+    <button type="submit"> Create</button>
+</div>
+</form>
+
+<div class="rightArea">
+<ul data-bind="foreach: products">
+    <li>
+           Product Id : <span data-bind="text: productId"></span> </br>
+           Product Name : <span data-bind="text: productName"></span> </br>
+           Product Description :<span data-bind="text: productDescription"></span></br>
+           Product Brand :<span data-bind="text: productBrand"></span></br>
+           ----------------------------------------------------</br>
+    </li>
+</ul>
+
+</div>
+
+
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/knockout-3.4.1.js"></script>
+<script src="js/knockout.mapping-latest.debug.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
