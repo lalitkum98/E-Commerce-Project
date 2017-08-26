@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Commerce</title>
+	<link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+	<div class="header">
+		<div class="headerText">
+		<h1>Commerce</h1>
+		</div>
+	</div>
+	<div class="mainarea">
+	<div class="leftArea">
+		<form data-bind="submit: CreateProduct">
+    		 <label>Product Id :</label> <input data-bind="value: productId" placeholder=" product Id" />
+    		 <label>Product Name :</label> <input data-bind="value: productName" placeholder=" product Name" />
+   			 <label>Product Description :</label> <input data-bind="value: productDescription" placeholder=" product Description" />
+    		 <label>Product Brand :</label> <input data-bind="value: productBrand" placeholder=" product Brand" />
+	 		 <input data-bind="value: productImgBind" placeholder=" product Image Binde" hidden="true"/>
+  	         <label>Uploaded image:</label> <img class="productImage" data-bind="attr:{src: uploadedImage()}"></br>
+ 	         <input type="file" accept='image/*' data-bind="value: productImage, event:{change: uploadProductImage}" placeholder=" Upload Product Image" /></br> 
+             <button type="submit"> Create Product</button>
+		</form>
+	</div>
+
+	<div class="rightArea">
+			<ul data-bind="foreach: products">
+			<div class ="productListingBox">
+   				<li>
+    	  			 <img class="productImage" data-bind="attr:{src: 'productImages/' + productImgBind()}"></br>
+           			 Product Id : <span data-bind="text: productId"></span> </br>
+          			 Product Name : <span data-bind="text: productName"></span> </br>
+          			 Product Description :<span data-bind="text: productDescription"></span></br>
+      	  		 	 Product Brand :<span data-bind="text: productBrand"></span>   
+    			</li>
+     		</div>
+			</ul>
+	</div>
+	</div>
+	<div class="footer">
+	<div class="footerText">
+		<h1>Commerce</h1>
+	</div>
+	</div>
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/knockout-3.4.1.js"></script>
+<script src="js/knockout.mapping-latest.debug.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
